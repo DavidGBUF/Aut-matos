@@ -6,7 +6,7 @@ class AutomatoQ1:
         self.alfabeto = {'a','b','c'}
         self.transiçoes = {
             (0, 'a'): 1,
-            (1, 'a'): 1,
+            (1, 'a'): 0,
             (1, 'b'): 1,
             (1, 'c'): 2,
             (2, 'a'): 1,
@@ -33,4 +33,4 @@ class AutomatoQ1:
 
 
 automato1 = AutomatoQ1()
-print(automato1.processar_cadeia("abaacabcbc"))
+print(automato1.processar_cadeia("abaacabbbccabcacaaabbbccabacacabcb"))
